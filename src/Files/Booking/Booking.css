@@ -1,0 +1,147 @@
+.booking-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: auto;
+    width: max-content;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #aec3da;
+    border: 1px solid rgb(187, 187, 187);
+
+    #start-date,#end-date,#place{
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        border-radius: 5px;
+        border-bottom: 1px solid rgb(247, 172, 10);
+        border-left: 1px solid rgb(247, 172, 10);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .react-datepicker__day {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .blocked-date {
+        background-color: red !important;
+        color: white !important;
+        cursor: not-allowed !important;
+    }
+
+    .available-date {
+        background-color: green !important;
+        color: white !important;
+    }
+
+    .booking-form label {
+        margin-right: 10px;
+    }
+
+    .booking-form>div {
+        margin-bottom: 10px;
+    }
+
+    .book-now-button {
+        padding: 13px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .book-now-button:hover {
+        background-color: #0056b3;
+    }
+
+    .booking-message {
+        margin-top: 10px;
+        color: #28a745;
+        font-weight: 500;
+    }
+
+    .past-date {
+        color: gray !important;
+        cursor: not-allowed !important;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.overlay-content h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: rgb(255, 30, 0);
+}
+.overlay-content h3{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(15, 184, 0);
+}
+
+.overlay-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li .error{
+    color: red;
+}
+
+.overlay-content li {
+    margin-bottom: 10px;
+    color: #6b6b6b;
+}
+
+.success-image {
+    width: 250px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.close-overlay-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.close-overlay-button:hover {
+    background: #0056b3;
+}

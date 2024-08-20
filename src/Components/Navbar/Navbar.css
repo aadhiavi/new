@@ -1,0 +1,44 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    ul {
+        display: flex;
+        gap: 50px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: white;
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+            a.active {
+                color: rgb(235, 156, 66);
+                position: relative;
+                width: max-content;
+                padding: 7px 0;
+            }
+
+            a.active::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                height: 3px;
+                border-radius: 20px;
+                background-color: white;
+            }
+        }
+    }
+}
